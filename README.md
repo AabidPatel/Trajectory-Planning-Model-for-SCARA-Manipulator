@@ -4,9 +4,13 @@ A Simulation Model for trajectory Planning developed in MATLAB and Simulink to g
 
 ## **Trajectory Generation:**
 
-![Trajectory](https://user-images.githubusercontent.com/73630123/221018028-f9de6f9a-c668-478b-8272-9853d50d9c5d.jpg)
+The Objective is to compute the trajectory in the operational space using Trapezoidal Velocity Profile. Four segments are given starting from the initial and final points. For each segment, position are calculated using the Trapezoidal Velocity formula.
 
-![Traj Gen](https://user-images.githubusercontent.com/73630123/221019243-65553a12-4127-4b9f-a21c-971985f4b2a5.jpg)
+Once the position coordinates of the segments are found then the value of the arc lengths can be found using position coordinates in the q(t) matrix. These values of arc lengths is saved in array "sj" for segment. "sj" is found by getting the norm of the position and the previous position in the q(t) matrix and it is then added to the previous element of "sj".
+
+Anticipation time is given as 0.2 seconds. This means that the trajectory will end in 3.4 seconds instead of 4 seconds. This is because, the first segment will be for 0.6 seconds then the second segment will be from 0.4 to 1.8 seconds as the second segment’s duration is 1.4 seconds. Since the third segment’s duration is 1.4 seconds, the segment will be from 1.6 to 3.0 seconds. Similarly, the fourth segment will be from 2.8 to 3.4 seconds as the duration of fourth segment is 0.6 seconds.
+
+After considering the anticipation time and using this vector of arc length, “Pe” is calculated, which is basically the position in the robot operational space. This position is plotted with respect to time in a 3D frame to visualize the trajectory. Below, there is figures of position, velocity and acceleration in 2d frame and trajectory in operational space.
 
 ![Traj Gen (1)](https://user-images.githubusercontent.com/73630123/221020555-67bb25af-cb2e-4f6d-aa29-0f2533e75918.jpg)
 
