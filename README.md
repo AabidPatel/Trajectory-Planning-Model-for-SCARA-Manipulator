@@ -16,7 +16,12 @@ After considering the anticipation time and using this vector of arc length, “
 
 ## **Inverse Dynamic Control Approach:**
 
+The objective is to use Inverse Dynamic Control system to obtain linearization using non-linear state feedback. The Inverse Dynamic Control has two subsystems where one obtains linear and decoupled I/O relationships and the other controls the system. 
+
 ***Second Order Inverse Kinematics Algorithm:***
+
+The files “direct_kin”, “jacobian”, “jacobian_dot” and “jacobian_inverse” contributes to the subsystem which controls the linear system. The aim of direct kinematics is to compute the pose of the end effector as a function of joint variables. This subsystem utilizes a second order inverse algorithm to compute the joint values using the geometrical Jacobian formula. The generated_traj.mat file works as the input to the second order algorithm which is basically the desired trajectory. After calculating the desired trajectory, it can be verified that the subsystem is working properly as the error values of the desired and obtained trajectory becomes
+0. This subsystem gives the outputs: qd, qd_dot and qd_dot_dot which is then taken as inputs in the other subsystem.
 
 ![Second Order Algorithm](https://user-images.githubusercontent.com/73630123/221025141-4708284a-079f-4902-8612-458c6d20d599.jpg)
 
