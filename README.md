@@ -8,4 +8,6 @@ A Simulation Model for trajectory Planning developed in MATLAB and Simulink to g
 
 ![Traj Gen](https://user-images.githubusercontent.com/73630123/221019243-65553a12-4127-4b9f-a21c-971985f4b2a5.jpg)
 
+![Traj Gen (1)](https://user-images.githubusercontent.com/73630123/221020555-67bb25af-cb2e-4f6d-aa29-0f2533e75918.jpg)
+
 ## **Inverse Dynamic Controller:**
