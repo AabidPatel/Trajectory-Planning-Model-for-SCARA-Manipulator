@@ -1,2 +1,7 @@
-# SCARA-Manipulator-Trajectory-Planning
+# Trajectory Planning Model for SCARA Manipulator
+
 A Simulation Model for trajectory Planning in MATLAB and Simulink to generate desired trajectory and joint torques using Inverse Dynamic Control aproach.
+
+## **Trajectory Generation:**
+
+## **Inverse Dynamic Controller:**
