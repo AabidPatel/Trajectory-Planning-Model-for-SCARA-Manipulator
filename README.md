@@ -15,3 +15,6 @@ After considering the anticipation time and using this vector of arc length, “
 ![Traj Gen (1)](https://user-images.githubusercontent.com/73630123/221020555-67bb25af-cb2e-4f6d-aa29-0f2533e75918.jpg)
 
 ## **Inverse Dynamic Controller:**
+
+![Inverse Dynamic Control](https://user-images.githubusercontent.com/73630123/221023976-6f42cc3b-de28-4fe2-b7d8-c8ae46799dd6.jpg)
+
