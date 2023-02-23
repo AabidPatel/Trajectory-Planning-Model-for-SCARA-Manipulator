@@ -1,0 +1,263 @@
+#VRML V2.0 utf8
+# Created with V-Realm Builder v2.0
+# Integrated Data Systems Inc.
+# www.ids-net.com
+
+Background {
+  skyColor [
+    0.555102 0.8 0.310204,
+    0.472038 0.7 0.326107,
+    0.00248253 0.0605161 0.7,
+    0.870928 0.960343 1 
+  ]
+  skyAngle [0.1, 1.2, 1.57]
+  groundColor [
+    0.10417 0.8 0.0175179,
+    0.151958 0.82 0.00496715,
+    0.467223 0.82 0.445801,
+    0.94898 1 0.897959 
+  ]
+  groundAngle [0.9, 1.5, 1.57]
+}
+DEF Base Transform {
+  translation -0.0270955 -2.0724 0
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          specularColor 1 1 1
+          diffuseColor 0.2 0.4 0.8
+        }
+      }
+      geometry Cylinder {
+        radius 0.2
+        height 0.2
+      }
+    }
+    DEF d1 Transform {
+      translation 0 0.5 0
+      children [
+        Shape {
+          appearance Appearance {
+            material Material {
+              specularColor 1 1 1
+              shininess 1
+              diffuseColor 0.8 0.4 0.2
+            }
+          }
+          geometry Cylinder {
+            radius 0.1
+            height 1
+          }
+        }
+        DEF j1 Transform {
+          translation 0 0.5 0
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  specularColor 1 1 1
+                  shininess 0.5
+                  diffuseColor 0.2 0.4 0.8
+                }
+              }
+              geometry Cylinder {
+                radius 0.2
+                height 0.2
+              }
+            }
+            DEF a22 Transform {
+              rotation 0 0 1 1.5708
+              children [
+                Shape {
+                  appearance Appearance {
+                    material Material {
+                    }
+                  }
+                  geometry Cylinder {
+                    radius 0.1
+                    height 0
+                  }
+                }
+                DEF a1 Transform {
+                  translation 0 -0.5 0
+                  rotation 1 0 0 3
+                  center 0 0.5 0
+                  children [
+                    Shape {
+                      appearance Appearance {
+                        material Material {
+                          specularColor 1 1 1
+                          shininess 0.5
+                          diffuseColor 0.8 0.4 0.2
+                        }
+                      }
+                      geometry Cylinder {
+                        radius 0.1
+                        height 1
+                      }
+                    }
+                    DEF j2 Transform {
+                      translation 0 -0.5 0
+                      rotation 0 0 1 1.5708
+                      children [
+                        Shape {
+                          appearance Appearance {
+                            material Material {
+                              specularColor 1 1 1
+                              shininess 0.5
+                              diffuseColor 0.2 0.4 0.8
+                            }
+                          }
+                          geometry Cylinder {
+                            radius 0.2
+                            height 0.2
+                          }
+                        }
+                        DEF j2b Transform {
+                          translation 0 -0 0
+                          rotation 0 0 1 1.5708
+                          children [
+                            Shape {
+                              appearance Appearance {
+                                material Material {
+                                }
+                              }
+                              geometry Cylinder {
+                                radius 0.1
+                                height 0.05
+                              }
+                            }
+                            DEF a2 Transform {
+                              translation 0 0.5 0
+                              rotation 1 0 0 1
+                              center 0 -0.5 0
+                              children [
+                                Shape {
+                                  appearance Appearance {
+                                    material Material {
+                                      specularColor 1 1 1
+                                      shininess 0.4
+                                      diffuseColor 0.8 0.4 0.2
+                                    }
+                                  }
+                                  geometry Cylinder {
+                                    radius 0.1
+                                    height 1
+                                  }
+                                }
+                                DEF prismaticJOINT Transform {
+                                  translation -0.1 0.5 0
+                                  children [
+                                    Shape {
+                                      appearance Appearance {
+                                        material Material {
+                                        }
+                                      }
+                                      geometry Box {
+                                        size 0.6 0.3 0.3
+                                      }
+                                    }
+                                    DEF d4 Transform {
+                                      translation -0.4 0 0
+                                      rotation 0 0 1 1.5708
+                                      children [
+                                        Shape {
+                                          appearance Appearance {
+                                            material Material {
+                                              specularColor 1 1 1
+                                              diffuseColor 0.6 0.6 0.2
+                                            }
+                                          }
+                                          geometry Cylinder {
+                                            radius 0.1
+                                            height 0.3
+                                          }
+                                        }
+                                        DEF d4b Transform {
+                                          translation 0 -1 0
+                                          children [
+                                            Shape {
+                                              appearance Appearance {
+                                                material Material {
+                                                  specularColor 1 1 1
+                                                  diffuseColor 0.1 1 0.1
+                                                }
+                                              }
+                                              geometry Cylinder {
+                                                radius 0.08
+                                                height 1
+                                              }
+                                            }
+                                            DEF EndH Transform {
+                                              translation 0 -0.5 0
+                                              rotation 0 0 1 1.5708
+                                              children [
+                                                Shape {
+                                                  appearance Appearance {
+                                                    material Material {
+                                                      specularColor 1 1 1
+                                                      diffuseColor 0.81 0.81 0.81
+                                                    }
+                                                  }
+                                                  geometry Cylinder {
+                                                    radius 0.05
+                                                    height 0.3
+                                                  }
+                                                }
+                                                DEF EndV1 Transform {
+                                                  translation -0.1 0.15 0
+                                                  rotation 0 0 1 1.5708
+                                                  children Shape {
+                                                    appearance Appearance {
+                                                      material Material {
+                                                        specularColor 1 1 1
+                                                        diffuseColor 1 0 0.5
+                                                      }
+                                                    }
+                                                    geometry Cylinder {
+                                                      radius 0.03
+                                                      height 0.2
+                                                    }
+                                                  }
+                                                }
+                                                DEF EndV2 Transform {
+                                                  translation -0.1 -0.15 0
+                                                  rotation 0 0 1 1.5708
+                                                  children Shape {
+                                                    appearance Appearance {
+                                                      material Material {
+                                                        specularColor 1 1 1
+                                                        diffuseColor 1 0 0.5
+                                                      }
+                                                    }
+                                                    geometry Cylinder {
+                                                      radius 0.03
+                                                      height 0.2
+                                                    }
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
